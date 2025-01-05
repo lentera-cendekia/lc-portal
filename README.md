@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lentera Cendekia Web Profile
 
-## Getting Started
+This README provides an overview of the Lentera Cendekia web profile project, instructions for setup, and how to run the application.
 
-First, run the development server:
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+Lentera Cendekia is a tutoring institution dedicated to fostering student excellence through personalized learning. This web profile is built using [Next.js](https://nextjs.org/) to provide a modern, responsive, and fast-loading online presence for the institution.
+
+## Features
+
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **Program Highlights**: Showcase of key tutoring programs and services.
+- **About Us Section**: Information about the institution's mission, vision, and values.
+- **Contact Form**: Allow visitors to easily get in touch.
+- **Dynamic Routing**: User-friendly and intuitive navigation.
+
+## Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 20 or later is recommended)
+- [bun](https://www.bun.sh/) (I recommend using this) or [pnpm](https://pnpm.io/) as package manager
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/<our-organization>/lc-portal.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd lc-portal
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   bun install
+   # or
+   pnpm install
+   ```
+
+## Running the Application
+
+### Development Mode
+
+To start the development server:
 
 ```bash
-npm run dev
+bun run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Mode
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Build the application:
 
-## Learn More
+   ```bash
+   bun run build
+   # or
+   pnpm run build
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   bun run start
+   # or
+   pnpm run start
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. The application will be available at [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```plaintext
+/lentera-cendekia-web-profile
+|-- /app         # All page components (routes)
+|-- /components    # Reusable components
+|-- /public        # Static assets (e.g., images, fonts)
+|-- /utils         # Utility functions/helpers
+|-- next.config.js # Next.js configuration
+|-- package.json   # Project metadata and scripts
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Commit your changes:
+
+   ```bash
+   git commit -m "Add your feature description"
+   ```
+
+4. Push to your branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+   `NB`: _Please ensure your code is properly formatted and tested and also use conventional commit message._
+
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
