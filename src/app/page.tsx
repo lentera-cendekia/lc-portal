@@ -1,28 +1,32 @@
-import Footer from '@/components/Footer'
-import About from '@/components/Landing/About'
-import Activity from '@/components/Landing/Activity'
-import Facility from '@/components/Landing/Facility'
-import FrequentlyAskedQuestion from '@/components/Landing/FrequentlyAskedQuestion'
-import Hero from '@/components/Landing/Hero'
-import Teacher from '@/components/Landing/Teacher'
-import Testimony from '@/components/Landing/Testimony'
-import TopProgram from '@/components/Landing/TopProgram'
-import UniqueSellingPoint from '@/components/Landing/UniqueSellingPoint'
-import Navbar from '@/components/Navbar'
+'use client'
+
+import Navbar from '@/components/navigation/navbar'
+import Hero from '@/components/landing/hero'
+import UniqueSellingPoint from '@/components/landing/unique-selling-point'
+import About from '@/components/landing/about'
+import TopProgram from '@/components/landing/top-program'
+import Facility from '@/components/landing/facility'
+import Activity from '@/components/landing/activity'
+import Teacher from '@/components/landing/teacher'
+import Testimony from '@/components/landing/testimony'
+import FrequentlyAskedQuestion from '@/components/landing/faq'
+import Footer from '@/components/footer'
 
 export default function Home() {
     return (
         <div>
             <Navbar />
             <Hero />
-            <About />
-            <UniqueSellingPoint />
-            <TopProgram />
-            <Facility />
-            <Activity />
-            <Teacher />
-            <Testimony />
-            <FrequentlyAskedQuestion />
+            <div className='px-5'>
+                <About />
+                <UniqueSellingPoint />
+                <TopProgram />
+                <Facility />
+                <Activity />
+                <Teacher />
+                <Testimony />
+                <FrequentlyAskedQuestion />
+            </div>
             <Footer />
         </div>
     )

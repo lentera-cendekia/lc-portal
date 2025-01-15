@@ -91,11 +91,11 @@ body {
 
         /* Warning Base Color */
         --warning-base: #ffff00;
-        --warning-100: #ffff00;
-        --warning-90: #cccc00;
-        --warning-80: #999900;
-        --warning-70: #666600;
-        --warning-60: #333300;
+        --warning-100: #312c00;
+        --warning-90: #524900;
+        --warning-80: #7b6e00;
+        --warning-70: #a39300;
+        --warning-60: #ccb700;
         --warning-50: #ffff66;
         --warning-40: #ffff99;
         --warning-30: #ffffcc;
