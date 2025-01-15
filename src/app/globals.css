@@ -2,20 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 10% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+
+        /* Custom Color Goes Here */
+
+        /* Neutral Base Color */
+        --neutral-base: #1b1b1b;
+        --neutral-0: #ffffff;
+        --neutral-10: #f6f6f6;
+        --neutral-20: #e8e8e8;
+        --neutral-30: #bbbbbb;
+        --neutral-40: #7f7f7f;
+        --neutral-50: #575757;
+        --neutral-60: #171717;
+        --neutral-70: #121212;
+        --neutral-80: #0e0e0e;
+        --neutral-90: #090909;
+        --neutral-100: #050505;
+
+        /* Primary Base Color */
+        --primary-base: #29166f;
+        --primary-10: #d4d0e2;
+        --primary-20: #b8b1cf;
+        --primary-30: #948bb7;
+        --primary-40: #70649f;
+        --primary-50: #4d3d87;
+        --primary-60: #22125d;
+        --primary-70: #1b0f4a;
+        --primary-80: #150b38;
+        --primary-90: #0e0725;
+        --primary-100: #080416;
+
+        /* Success Base Color */
+        --success-base: #00ff00;
+        --success-100: #00ff00;
+        --success-90: #00cc99;
+        --success-80: #009966;
+        --success-70: #006633;
+        --success-60: #003300;
+        --success-50: #66ff99;
+        --success-40: #99ffcc;
+        --success-30: #ccffff;
+        --success-20: #ccffff;
+        --success-10: #e6ffff;
+
+        /* Error Base Color */
+        --error-base: #ff0000;
+        --error-100: #ff0000;
+        --error-90: #cc0000;
+        --error-80: #990000;
+        --error-70: #660000;
+        --error-60: #330000;
+        --error-50: #ff6666;
+        --error-40: #ff9999;
+        --error-30: #ffcccc;
+        --error-20: #ffcccc;
+        --error-10: #ffe6e6;
+
+        /* Warning Base Color */
+        --warning-base: #ffff00;
+        --warning-100: #312c00;
+        --warning-90: #524900;
+        --warning-80: #7b6e00;
+        --warning-70: #a39300;
+        --warning-60: #ccb700;
+        --warning-50: #ffff66;
+        --warning-40: #ffff99;
+        --warning-30: #ffffcc;
+        --warning-20: #ffffcc;
+        --warning-10: #ffffe6;
+
+        /* End Of Custom Color */
+    }
+    .dark {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
 }
